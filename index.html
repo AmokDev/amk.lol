@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kek!</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-        <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-        <link type="Image/x-icon" href="favicon.ico" rel="icon">
+        <link type="image/x-icon" href="assets/favicon.ico" rel="shortcut icon">
+        <link type="Image/x-icon" href="assets/favicon.ico" rel="icon">
     </head>
     <body>
         <section class="section">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Привет <img class="image is-64x64" src="assets/hello.gif" oncontextmenu="return false;" ondragstart="return false;" style="display: inline-block;">
+                </h1>
+                <div class="is-padding-3"></div>
+            </div>
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-half">
@@ -18,7 +24,7 @@
                                 <div class="media">
                                     <div class="media-left">
                                         <figure class="image is-48x48">
-                                            <img src="avatar.png" alt="AmokDev"/>
+                                            <img src="assets/avatar.png" oncontextmenu="return false;" ondragstart="return false;" alt="AmokDev"/>
                                         </figure>
                                     </div>
                                     <div class="media-content">
@@ -27,18 +33,29 @@
                                     </div>
                                 </div>
                                 <div class="content">
-                                    Привет, Я Амок! Мои основные языки программирования - Java, Python и NodeJS. Я также увлекаюсь реверс-инжинирингом андроид-приложений с использованием инструмента Frida. Моя цель - создавать инновационные и эффективные решения для различных задач программирования.
+                                    Я Амок! Мои основные языки программирования - <a class="has-text-warning" href="https://www.python.org/" target="_blank">Python</a>, <a class="has-text-primary" href="https://www.java.com/" target="_blank">Java</a> и <a class="has-text-link" href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>.</br>
+                                    Я также увлекаюсь реверс-инжинирингом андроид-приложений с использованием инструмента <a class="has-text-danger" href="https://frida.re/docs" target="_blank">Frida</a>. </br>
+                                    Моя цель - создавать инновационные и эффективные решения для различных задач программирования.</br>
                                 </div>
-                                <footer class="card-footer">
-                                    <a href="#projects" class="smooth-scroll card-footer-item">Проекты</a>
-                                    <a href="#contacts" class="smooth-scroll card-footer-item">Контакты</a>
-                                </footer>
                             </div>
+                            <footer class="card-footer">
+                                <a href="#projects" class="button smooth-scroll card-footer-item">Проекты</a>
+                                <a href="#contacts" class="button smooth-scroll card-footer-item">Связь</a>
+                            </footer>
                         </div>
                     </div>
                 </div>
-                <div id="contacts" class="has-text-centered"><i class="fa-solid fa-umbrella-beach"></i> До лета осталось <span id="summer">loading...</span></div>
             </div>
+        </section>
+        <section class="section">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Немного статистики
+                </h1>
+                <div class="is-padding-3"></div>
+            </div>
+            <div class="has-text-centered"><i class="fa-solid fa-umbrella-beach"></i> До лета осталось <span id="summer">loading...</span></div></br>
+            <progress id="summer-progress" class="progress is-warning" max="152"></progress>
         </section>
         <section id="projects" class="section">
             <div class="container">
@@ -61,19 +78,126 @@
                                     <span>Java</span>
                                 </a>
                             </li>
+                            <li>
+                                <a>
+                                    <span class="icon is-small">
+                                        <i class="fa-brands fa-html5"></i>
+                                    </span>
+                                    <span>HTML/CSS</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            </br></br>
+            <div class="grid">
+                <!-- YM DS RPC -->
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/python/project_ym_ds_rpc.png" oncontextmenu="return false;" ondragstart="return false;" alt="Yandex Music Discord RPC"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">YM Discord-RPC</p>
+                                    <p class="subtitle is-6"><i class="fa-brands fa-github"></i> <a class="has-text-link" href="https://github.com/AmokDev/Discord-YM-RPC" target="_blank">GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Эта программа покажет другим пользователям Discord, что вы слушаете в настоящем времени в Yandex Music!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- YT DS RPC -->
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/python/project_ytm_ds_rpc.jpg" oncontextmenu="return false;" ondragstart="return false;" alt="YouTube Music Discord RPC"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">YT Discord-RPC</p>
+                                    <p class="subtitle is-6"><i class="fa-brands fa-github"></i> <a class="has-text-link" href="https://github.com/AmokDev/discord-yt-rpc" target="_blank">GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Эта программа покажет другим пользователям Discord, что вы слушаете в настоящем времени в YouTube Music!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEATH NOTE PLUGIN -->
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/java/project_death_note.png" oncontextmenu="return false;" ondragstart="return false;" alt="Death Note Minecraft Plugin"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Death Note</p>
+                                    <p class="subtitle is-6"><i class="fa-brands fa-github"></i> <a class="has-text-link" href="https://github.com/AmokDev/DeathNote" target="_blank">GitHub</a></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Minecraft SpigotMC plugin!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEATH NOTE PLUGIN -->
+                <div class="cell">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/other/project_dummy_brawl.png" oncontextmenu="return false;" ondragstart="return false;" alt="Dummy Brawl"/>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Dummy Brawl</p>
+                                    <p class="subtitle is-6"><i class="fa-brands fa-telegram"></i> <a class="has-text-link" href="https://t.me/dummy_team" target="_blank">Telegram</a></p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Приватный сервер по Brawl Stars на 24 версии игры!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <footer class="footer">
+        <footer id="contacts" class="footer">
+            <div class="content has-text-centered">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <p><strong>Как со мной связаться?</strong></p>
+                            <p><a class="has-text-link" href="https://t.me/amokdev" target="_blank">Telegram</a></p>
+                            <p><a class="has-text-link" href="https://discordapp.com/users/219774026237607936" target="_blank">Discord</a></p>
+                            <p><a class="has-text-link" href="mailto:i@amk.lol" target="_blank">Почта</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="content has-text-centered">
                 <p>amk.lol &copy; 2024</p>
             </div>
         </footer>
         <script src="https://kit.fontawesome.com/43e816a2c1.js" crossorigin="anonymous"></script>
+        <script src="d56f9a82467d.js"></script>
         <script src="main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
-        <!-- <script src="d56f9a82467d.js"></script> -->
     </body>
 </html>

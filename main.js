@@ -10,6 +10,8 @@ function updateCountdown() {
 
     try {
         document.getElementById("summer").innerHTML = days + "д " + hours + "ч " + minutes + "мин " + seconds + "сек";
+        document.getElementById("summer-progress").innerHTML = 152 - days + "%";
+        document.getElementById("summer-progress").value = 152 - days;
     } catch (error) {  }
 }
 
